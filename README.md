@@ -9,6 +9,16 @@ Library Path is On
 /vcparkingslot
 ```
 
+Compiled Library Path is at
+```
+/vcparkingslot/build/outputs/aar/
+```
+
+And also Compiled APK Path is at
+```
+/app/build/outputs/apk/debug/ or /app/build/outputs/apk/release/
+```
+
 To Starting Open The Projects
 ```
 Open Folder (Project Folder) With Android Studio and Run With AVD or Actual Devices
@@ -18,7 +28,12 @@ Open Folder (Project Folder) With Android Studio and Run With AVD or Actual Devi
 
 The Integrated Library Would have dynamic way to start their activities.
 
-Replacing the current activity will follow this code
+The Important step is Import The Library file to android app project to
+```
+/name_of_apps/Libs/vcparkingslot-debug.aar or /name_of_apps/Libs/vcparkingslot-release.aar
+```
+
+Replacing the current activity will follow this code on MainActivity
 ```
 Intent intent = new Intent(this.Context, ThePluginsReference.Activity_().getClass());
 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_NEW_HOME);
