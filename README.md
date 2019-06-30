@@ -32,6 +32,18 @@ The Important step is Import The Library file to android app project to
 ```
 /name_of_apps/Libs/vcparkingslot-debug.aar or /name_of_apps/Libs/vcparkingslot-release.aar
 ```
+And Importing Pragmatically
+```
+import com.example.vcparkingslot.VCParkingSlot;
+
+public class MainActivity extends AppCompatActivity {
+
+    VCParkingSlot vcParkingSlot = new VCParkingSlot();
+
+    ...
+}
+
+```
 
 Replacing the current activity will follow this code on MainActivity
 ```
